@@ -5,7 +5,7 @@ import Circles from '../../components/Circles';
 
 // framer motion
 import { motion } from 'framer-motion';
-import { fadeIn} from '../../variants'; 
+import { fadeIn } from '../../variants'; 
 
 const Services = () => {
   return <div className='h-full bg-primary/30 py-36 dlex items-center'>
@@ -20,7 +20,7 @@ const Services = () => {
             animate="show"
             exit="hidden" 
             className='h2 xl:mt-8'>
-            My Services<span className='text-accent'> .</span>
+            My Services<span className='text-accent'>.</span>
           </motion.h2>
           <motion.p 
             variants={fadeIn('up', 0.4)}
@@ -28,7 +28,7 @@ const Services = () => {
             animate="show"
             exit="hidden" 
             className='mb-4 max-w-[400px] mx-auto lg:mx-0'>
-            Lorem ipsum dolor sit amet andsit konstraktur enduro injaitur asmarow arrow fungcion nagano sinra sahato shika
+            I transform your ideas into reality with my specialized services. I focus on delivering tangible value, ensuring your technology infrastructure and projects are optimized for success.
           </motion.p>
         </div>
           {/* slider */}

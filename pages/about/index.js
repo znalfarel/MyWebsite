@@ -9,18 +9,20 @@ import {
   FaServer,
   FaNetworkWired,
   FaDatabase,
-  FaNodeJs
+  FaNodeJs,
+  FaLaptopCode,
+  FaScrewdriver,
+  FaTools,
+  FaUserCog,
+  FaWindows
 } from "react-icons/fa";
 
 import {
   SiNextdotjs,
-  SiFramer,
-  SiAdobexd,
-  SiAdobephotoshop,
-  SiCisco,
   SiMikrotik,
   SiProxmox,
-  SiUbuntu
+  SiUbuntu,
+  SiDebian
 } from "react-icons/si";
 
 
@@ -31,7 +33,7 @@ export const aboutData = [
     info: [
       {
         title: 'Network & System Administrator',
-        icons: [<SiMikrotik />, <SiProxmox />, <SiUbuntu />, <FaServer />, <FaNetworkWired />, <FaDatabase />],
+        icons: [<SiMikrotik />, <SiProxmox />, <SiUbuntu />, <FaServer />, <FaNetworkWired />, <SiDebian />],
         
       },
       {
@@ -45,18 +47,23 @@ export const aboutData = [
           <FaNodeJs />,
         ],
       },
+      {
+        title: 'Laptop Technician',
+        icons: [
+          <FaLaptopCode />,
+          <FaWindows />,
+          <FaTools />,
+          <FaUserCog />
+        ],
+      },
     ],
   },
   {
     title: 'awards',
     info: [
       {
-        title: 'Webby Awards - Honoree',
-        stage: '2011 - 2012',
-      },
-      {
-        title: 'Adobe Design Achievement Awards - Finalist',
-        stage: '2009 - 2010',
+        title: '',
+        stage: '',
       },
     ],
   },
@@ -64,16 +71,12 @@ export const aboutData = [
     title: 'experience',
     info: [
       {
-        title: 'UX/UI Designer - XYZ Company',
-        stage: '2012 - 2023',
+        title: 'Laptop Technician - Laptop Yes',
+        stage: '2023',
       },
       {
-        title: 'Web Developer - ABC Agency',
-        stage: '2010 - 2012',
-      },
-      {
-        title: 'Intern - DEF Corporation',
-        stage: '2008 - 2010',
+        title: 'Network Engineer - SMK YPM 1 TAMAN',
+        stage: '2023 - 2025',
       },
     ],
   },
@@ -81,16 +84,16 @@ export const aboutData = [
     title: 'credentials',
     info: [
       {
-        title: 'Web Development - ABC University, LA, CA',
-        stage: '2011',
+        title: 'Computer and Network Engineering - SMK YPM 1 TAMAN',
+        stage: '2024',
       },
       {
-        title: 'Computer Science Diploma - AV Technical Institute',
-        stage: '2009',
+        title: 'Informatics Engineering - Muhammadiyah University of Sidoarjo',
+        stage: '2025',
       },
       {
-        title: 'Certified Graphic Designer - ABC Institute, Los Angeles, CA',
-        stage: '2006',
+        title: 'Certified Software Engineering - RevoU Coding Camp',
+        stage: '2025',
       },
     ],
   },
@@ -132,7 +135,7 @@ const About = () => {
             animate='show' 
             exit='hidden' 
             className="h2">
-            Captivating <span className="text-accent">Stories</span> birth magnificent designs.
+            Technical Expertise Drives  Digital<span className="text-accent"> Transformation.</span>
           </motion.h2>
           <motion.p 
             variants={fadeIn('right', 0.4)} 
@@ -140,7 +143,7 @@ const About = () => {
             animate='show' 
             exit='hidden' 
             className="maxw-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0">
-            10 Years ago, I began freelance as a Developer, Since than, I,ve done remote work  for afencies, consulted for startup, and collaborated on digital product for bussines
+            2 years ago, I began my career as a freelance laptop technician. Since then, I transitioned to a network engineer role, and currently, I am focused on learn web development.
           </motion.p>
           { /* counters */}
           <motion.div 
@@ -153,30 +156,30 @@ const About = () => {
               {/* experience */}
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/20 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={2} duration={5} /> +
+                  <CountUp start={0} end={18} duration={5} /> 
                 </div>
-                <div className="text-xs uppercase tracking-[1px] loading-[1.4] max-w-[100px]">Years of experience</div>
+                <div className="text-xs uppercase tracking-[1px] loading-[1.4] max-w-[100px]">Years Old</div>
               </div>
               {/* clients */}
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/20 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={2} duration={5} /> 
+                  <CountUp start={0} end={3} duration={5} /> + 
                 </div>
-                <div className="text-xs uppercase tracking-[1px] loading-[1.4] max-w-[100px]">Satisfied Clients</div>
+                <div className="text-xs uppercase tracking-[1px] loading-[1.4] max-w-[100px]">Years Of Experience</div>
               </div>
               {/* prjoects */}
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/20 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={10} duration={5} /> 
+                  <CountUp start={0} end={100} duration={5} /> + 
                 </div>
-                <div className="text-xs uppercase tracking-[1px] loading-[1.4] max-w-[100px]">Finished Projects</div>
+                <div className="text-xs uppercase tracking-[1px] loading-[1.4] max-w-[100px]">Satisfied Clients</div>
               </div>
               {/* awards */}
               <div className="relative flex-1 ">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={3} duration={5} /> 
+                  <CountUp start={0} end={100} duration={5} /> +
                 </div>
-                <div className="text-xs uppercase tracking-[1px] loading-[1.4] max-w-[100px]">Winning Awards</div>
+                <div className="text-xs uppercase tracking-[1px] loading-[1.4] max-w-[100px]">Projects Completed</div>
               </div>
             </div>
           </motion.div>

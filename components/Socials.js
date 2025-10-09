@@ -3,7 +3,7 @@ import Link from "next/link";
 
 //icons
 import {
-  RiYoutubeLine, 
+  RiTelegramLine, 
   RiInstagramLine, 
   RiTiktokLine, 
   RiLinkedinLine} from "react-icons/ri";
@@ -11,8 +11,8 @@ import {
 const Socials = () => {
   return ( 
   <div className="flex items-center gap-x-5 text-lg">
-    <Link href={''} className="hover:text-accent transition-all duration-300">
-      <RiYoutubeLine />
+    <Link href={'https://t.me/Rhalimawan'} className="hover:text-accent transition-all duration-300">
+      <RiTelegramLine />
     </Link>
     <Link href={'https://www.instagram.com/znfrl.eth'} className="hover:text-accent transition-all duration-300">
       <RiInstagramLine />

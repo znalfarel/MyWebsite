@@ -14,7 +14,16 @@ import {
   RxReader,
   RxRocket,
   RxArrowTopRight,
+  
 } from "react-icons/rx";
+
+import {
+  FaNetworkWired,
+  FaWifi,
+  FaTools,
+  FaVideo,
+  FaCut,
+} from "react-icons/fa";
 
 //import required modules
 import { FreeMode, Pagination } from "swiper";
@@ -22,29 +31,29 @@ import { FreeMode, Pagination } from "swiper";
 // data
 export const serviceData = [
   {
-    icon: <RxCrop />,
-    title: 'Branding',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    icon: <FaWifi />,
+    title: 'Networking',
+    description: 'Design, install, and manage secure network infrastructures. We ensure fast, reliable connectivity for all your business operations and data transfer needs.',
   },
   {
-    icon: <RxPencil2 />,
-    title: 'Design',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    icon: <FaTools />,
+    title: 'Techinician',
+    description: 'Personal laptop repair, troubleshooting, and virus removal. Get expert help to keep your personal computer and gadgets running perfectly.',
   },
   {
     icon: <RxDesktop />,
     title: 'Development',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    description: 'Build a personal website or custom tool for your projects. I create simple, unique digital solutions for your personal needs and hobbies.',
   },
   {
-    icon: <RxReader />,
-    title: 'Copywriting',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    icon: <RxPencil2 />,
+    title: 'Design',
+    description: 'LCreate custom graphics, logos, or personal artwork. I help bring your visual ideas to life for social media, hobbies, or personal projects.',
   },
   {
-    icon: <RxRocket />,
-    title: 'SEO',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    icon: <FaCut />,
+    title: 'Editing',
+    description: 'Refine your videos. Get clean, professional edits for your personal content, ensuring it looks and reads perfectly.',
   },
 ];
 
