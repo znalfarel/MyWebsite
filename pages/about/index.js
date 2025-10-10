@@ -33,27 +33,26 @@ export const aboutData = [
     info: [
       {
         title: 'Network & System Administrator',
-        icons: [<SiMikrotik />, <SiProxmox />, <SiUbuntu />, <FaServer />, <FaNetworkWired />, <SiDebian />],
-        
+        icons: [SiMikrotik, SiProxmox, SiUbuntu, FaServer, FaNetworkWired, SiDebian]
       },
       {
         title: 'Web Development',
         icons: [
-          <FaHtml5 />,
-          <FaCss3 />,
-          <FaJs />,
-          <FaReact />,
-          <SiNextdotjs />,
-          <FaNodeJs />,
+          FaHtml5,
+          FaCss3,
+          FaJs,
+          FaReact,
+          SiNextdotjs,
+          FaNodeJs,
         ],
       },
       {
         title: 'Laptop Technician',
         icons: [
-          <FaLaptopCode />,
-          <FaWindows />,
-          <FaTools />,
-          <FaUserCog />
+          FaLaptopCode,
+          FaWindows,
+          FaTools,
+          FaUserCog
         ],
       },
     ],
@@ -112,7 +111,7 @@ import CountUp from "react-countup";
 
 const About = () => {
   const [index, setIndex] = useState(0);
-  console.log(index);
+  console.log(index)
   return (
     <div className="h-full bg-primary/30 py-32 text-center xl:text-left">
       <Circles />
@@ -143,7 +142,7 @@ const About = () => {
             animate='show' 
             exit='hidden' 
             className="maxw-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0">
-            2 years ago, I began my career as a freelance laptop technician. Since then, I transitioned to a network engineer role, and currently, I am focused on learn web development.
+            2 years ago, I began my career as a freelance laptop technician. Since then, I transitioned to a network engineer role, and currently, focused on learning web development.
           </motion.p>
           { /* counters */}
           <motion.div 
@@ -158,28 +157,28 @@ const About = () => {
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
                   <CountUp start={0} end={18} duration={5} /> 
                 </div>
-                <div className="text-xs uppercase tracking-[1px] loading-[1.4] max-w-[100px]">Years Old</div>
+                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">Years Old</div>
               </div>
               {/* clients */}
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/20 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
                   <CountUp start={0} end={3} duration={5} /> + 
                 </div>
-                <div className="text-xs uppercase tracking-[1px] loading-[1.4] max-w-[100px]">Years Of Experience</div>
+                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">Years Of Experience</div>
               </div>
               {/* prjoects */}
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/20 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
                   <CountUp start={0} end={100} duration={5} /> + 
                 </div>
-                <div className="text-xs uppercase tracking-[1px] loading-[1.4] max-w-[100px]">Satisfied Clients</div>
+                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">Satisfied Clients</div>
               </div>
               {/* awards */}
               <div className="relative flex-1 ">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
                   <CountUp start={0} end={100} duration={5} /> +
                 </div>
-                <div className="text-xs uppercase tracking-[1px] loading-[1.4] max-w-[100px]">Projects Completed</div>
+                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">Projects Completed</div>
               </div>
             </div>
           </motion.div>
@@ -206,7 +205,7 @@ const About = () => {
               )
             })}
           </div>
-          <div className="py-2 xl:py-46 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start">
+          <div className="py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start">
             {aboutData[index].info.map((item, itemIndex) => {
               return <div key={itemIndex} className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60">
                 {/* title */}
@@ -215,9 +214,10 @@ const About = () => {
                 <div>{item.stage}</div>
                 <div className="flex gap-x-4">
                   {/* icons */}
-                  {item.icons?.map((icon, itemIndex) => {
-                    return <div className="text-2xl text-white">{icon}</div>
-                  })}
+                  {item.icons?.map((Icon, iconIndex) => {
+                    console.log(typeof Icon);
+                    return <Icon key={iconIndex} className="text-2xl text-white" />
+            })}
                 </div>
               </div>
             })}
