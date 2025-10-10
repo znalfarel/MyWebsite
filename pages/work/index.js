@@ -29,7 +29,7 @@ const Work = () => {
             animate="show"
             exit="hidden" 
             className='mb-4 max-w-[400px] mx-auto lg:mx-0'>
-            Lorem ipsum dolor sit amet andsit konstraktur enduro injaitur asmarow arrow fungcion nagano sinra sahato shika
+            Explore my diverse portfolio showcasing expertise in system optimization and repair, robust network infrastructure design, and simple web application development.
           </motion.p>
         </div>
           {/* slider */}
