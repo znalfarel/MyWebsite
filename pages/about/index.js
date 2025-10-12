@@ -58,11 +58,23 @@ export const aboutData = [
     ],
   },
   {
-    title: 'awards',
+    title: 'Certificate',
     info: [
       {
-        title: '',
-        stage: '',
+        title: 'Network Technician Career Path by Cisco',
+        stage: '2024',
+      },
+      {
+        title: 'Certificate of Competency by PT. Radnet Digital Indonesia',
+        stage: '2025',
+      },
+      {
+        title: 'Intro to Software Engineering by RevoU',
+        stage: '2025',
+      },
+      {
+        title: 'Code Generations and Optimization by IBM SkilsBuild x Hacktiv8',
+        stage: '2025',
       },
     ],
   },
@@ -89,11 +101,7 @@ export const aboutData = [
       {
         title: 'Informatics Engineering - Muhammadiyah University of Sidoarjo',
         stage: '2025',
-      },
-      {
-        title: 'Certified Software Engineering - RevoU Coding Camp',
-        stage: '2025',
-      },
+      }
     ],
   },
 ];
@@ -216,7 +224,7 @@ const About = () => {
                   {/* icons */}
                   {item.icons?.map((Icon, iconIndex) => {
                     console.log(typeof Icon);
-                    return <Icon key={iconIndex} className="text-2xl text-white" />
+                    return <Icon key={iconIndex} className="text-2xl text-white hover:text-accent transition duration-300" />
             })}
                 </div>
               </div>
