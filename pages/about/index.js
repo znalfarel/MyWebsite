@@ -142,7 +142,7 @@ const About = () => {
             animate='show' 
             exit='hidden' 
             className="h2">
-            Technical Expertise Drives  Digital<span className="text-accent"> Transformation.</span>
+            EAT SLEEP<span className="text-accent"> LEARN.</span>
           </motion.h2>
           <motion.p 
             variants={fadeIn('right', 0.4)} 
