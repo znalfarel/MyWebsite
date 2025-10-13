@@ -39,7 +39,7 @@ const Home = () => {
           Full-stack technology specialist skilled in Network Engineering, Web Development, and hardware diagnostics (Laptop Technician). I leverage my passion as an AI Enthusiast to drive innovation across all technical layers.
         </motion.p>
         {/* btns */}
-        <div className="flex justify-center xl:hidden relative">
+        <div className="flex justify-center xl:hidden relative ">
           <ProjectsBtn />
         </div>
         <motion.div 
