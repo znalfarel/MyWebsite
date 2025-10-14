@@ -68,7 +68,7 @@ const MusicPlayer = ({ src }) => {
         // 2. Tambahkan ukuran eksplisit (w-12 h-12) dan pastikan ikon di tengah (flex items-center justify-center)
         className="
             bg-accent text-white rounded-full shadow-lg transition-all duration-300
-            w-12 h-12 flex items-center justify-center hover:bg-opacity-80
+            w-10 h-10 flex items-center justify-center hover:bg-opacity-80
               
         "
       >
