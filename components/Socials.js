@@ -10,7 +10,7 @@ import {
 
 const Socials = () => {
   return ( 
-  <div className="flex items-center gap-x-5 text-lg">
+  <div className="flex items-center gap-x-4 text-lg md:text-xl xl:text-2xl">
     <Link href={'https://t.me/Rhalimawan'} className="hover:text-accent transition-all duration-300">
       <RiTelegramLine />
     </Link>
