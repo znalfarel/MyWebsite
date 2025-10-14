@@ -129,7 +129,7 @@ const About = () => {
         initial='hidden' 
         animate='show' 
         exit='hidden' 
-        className="hidden xl:flex absolute bottom-0 -left-[330px]"
+        className="hidden xl:flex absolute bottom-0 -left-[330px] z-10"
         >
         <Avatar />
       </motion.div>
@@ -142,7 +142,7 @@ const About = () => {
             animate='show' 
             exit='hidden' 
             className="h2">
-            EAT SLEEP<span className="text-accent"> LEARN.</span>
+            EAT SLEEP<span className="text-accent"> LEARN</span> REPEAT.
           </motion.h2>
           <motion.p 
             variants={fadeIn('right', 0.4)} 
@@ -159,7 +159,7 @@ const About = () => {
             animate='show' 
             exit='hidden' 
             className="hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8">
-            <div className="flex flex-1 xl:gap-x-6">
+            <div className="flex flex-1 xl:gap-x-6 z-30">
               {/* experience */}
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/20 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
