@@ -8,7 +8,7 @@ import Link from "next/link";
 import { HiArrowRight } from "react-icons/hi2";
 
 const ProjectsBtn = () => {
-  return <div className="mx-auto xl:mx-0 relative z-10">
+  return <div className="mx-auto xl:mx-0 relative z-10 -translate-y-6">
     <Link href={'/work'} className="relative w-[140px] h-[140px] md:w-[160px] md:h-[160px] xl:w-[180px] xl:h-[180px] flex justify-center items-center bg-circleStar bg-cover bg-center bg-no-repeat group">
     <Image 
       src={'/rounded-text.png'} 
