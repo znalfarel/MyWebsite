@@ -60,7 +60,7 @@ const MusicPlayer = ({ src }) => {
 
   return (
     // 1. TINGKATKAN Z-INDEX CONTAINER ke yang tertinggi (z-[999])
-    <div className="fixed top-0 right-3 lg:bottom-20 lg:right-6 z-[999]"> 
+    <div className="fixed top-0 left-3 lg:bottom-20 lg:left-6 z-[999]"> 
       <audio ref={audioRef} src={src} preload="auto" />
       
       <button 
@@ -69,7 +69,7 @@ const MusicPlayer = ({ src }) => {
         className="
             bg-accent text-white rounded-full shadow-lg transition-all duration-300
             w-12 h-12 flex items-center justify-center hover:bg-opacity-80
-            z-[999]  
+              
         "
       >
         {/* Ikon sudah memiliki size={20} yang cukup baik */}
