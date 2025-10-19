@@ -8,16 +8,19 @@ import {
   HiEnvelope,
 } from 'react-icons/hi2';
 
+import {MdHomeRepairService, MdRateReview} from 'react-icons/md'
+import {PiProjectorScreenChartFill} from 'react-icons/pi'
+
 // nav data
 export const navData = [
   { name: 'home', path: '/', icon: <HiHome /> },
   { name: 'about', path: '/about', icon: <HiUser /> },
-  { name: 'services', path: '/services', icon: <HiRectangleGroup /> },
-  { name: 'work', path: '/work', icon: <HiViewColumns /> },
+  { name: 'services', path: '/services', icon: <MdHomeRepairService /> },
+  { name: 'work', path: '/work', icon: <PiProjectorScreenChartFill /> },
   {
     name: 'testimonials',
     path: '/testimonials',
-    icon: <HiChatBubbleBottomCenterText />,
+    icon: <MdRateReview />,
   },
   {
     name: 'contact',
