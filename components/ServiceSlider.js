@@ -48,7 +48,7 @@ export const serviceData = [
   {
     icon: <RxPencil2 />,
     title: 'Design',
-    description: 'LCreate custom graphics, logos, or personal artwork. I help bring your visual ideas to life for social media, hobbies, or personal projects.',
+    description: 'Create custom graphics, logos, or personal artwork. I help bring your visual ideas to life for social media, hobbies, or personal projects.',
   },
   {
     icon: <FaCut />,
